@@ -107,6 +107,7 @@
     <Content Include="WebForm2.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\clsDbPrincipal.cs" />
     <Compile Include="PaginaMaestra.Master.cs">
       <DependentUpon>PaginaMaestra.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
