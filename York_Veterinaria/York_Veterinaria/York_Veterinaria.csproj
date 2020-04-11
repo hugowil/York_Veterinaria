@@ -14,7 +14,7 @@
     <RootNamespace>York_Veterinaria</RootNamespace>
     <AssemblyName>York_Veterinaria</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort>44322</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
@@ -67,13 +67,79 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\fonts\fa-solid-900.svg" />
+    <Content Include="assets\fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="assets\images\avatars\1.jpg" />
+    <Content Include="assets\images\avatars\10.jpg" />
+    <Content Include="assets\images\avatars\11.jpg" />
+    <Content Include="assets\images\avatars\12.jpg" />
+    <Content Include="assets\images\avatars\2.jpg" />
+    <Content Include="assets\images\avatars\3.jpg" />
+    <Content Include="assets\images\avatars\4.jpg" />
+    <Content Include="assets\images\avatars\5.jpg" />
+    <Content Include="assets\images\avatars\8.jpg" />
+    <Content Include="assets\images\avatars\9.jpg" />
+    <Content Include="assets\images\logo-inverse.png" />
+    <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\user.png" />
+    <Content Include="assets\images\user1.png" />
+    <Content Include="assets\scripts\bootstrap.css" />
+    <Content Include="assets\scripts\chosen\chosen-sprite%402x.png" />
+    <Content Include="assets\scripts\chosen\chosen-sprite.png" />
+    <Content Include="assets\scripts\chosen\chosen.css" />
+    <Content Include="assets\scripts\chosen\chosen.min.css" />
+    <Content Include="assets\scripts\chosen\chosen\chosen.jquery.js" />
+    <Content Include="assets\scripts\chosen\chosen\chosen.jquery.min.js" />
+    <Content Include="assets\scripts\chosen\chosen\chosen.proto.js" />
+    <Content Include="assets\scripts\chosen\chosen\chosen.proto.min.js" />
+    <Content Include="assets\scripts\dataTables.bootstrap4.min.css" />
+    <Content Include="assets\scripts\dataTables.bootstrap4.min.js" />
+    <Content Include="assets\scripts\jquery-2.1.4.min.js" />
+    <Content Include="assets\scripts\jquery-3.3.1.js" />
+    <Content Include="assets\scripts\jquery.dataTables.min.js" />
+    <Content Include="assets\scripts\main.js" />
+    <Content Include="assets\scripts\sweetalert.min.css" />
+    <Content Include="assets\scripts\sweetalert.min.js" />
+    <Content Include="index.html" />
+    <Content Include="main.css" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PaginaMaestra.Master.cs">
+      <DependentUpon>PaginaMaestra.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaMaestra.Master.designer.cs">
+      <DependentUpon>PaginaMaestra.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\fonts\fa-solid-900.eot" />
+    <Content Include="assets\fonts\fa-solid-900.ttf" />
+    <Content Include="assets\fonts\fa-solid-900.woff" />
+    <Content Include="assets\fonts\fa-solid-900.woff2" />
+    <Content Include="assets\fonts\Pe-icon-7-stroke.eot" />
+    <Content Include="assets\fonts\Pe-icon-7-stroke.ttf" />
+    <Content Include="assets\fonts\Pe-icon-7-stroke.woff" />
     <None Include="packages.config" />
+    <Content Include="PaginaMaestra.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -96,7 +162,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>54548</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44322/</IISUrl>
+          <IISUrl>http://localhost/York_Veterinaria</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
