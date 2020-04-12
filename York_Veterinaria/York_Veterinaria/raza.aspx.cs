@@ -13,5 +13,14 @@ namespace York_Veterinaria
         {
 
         }
+        protected void btnEnviar_Click(object sender, EventArgs e)
+        {
+            clsTablasGenerales obj = new clsTablasGenerales();
+            obj.InsertarRaza(txtRaza.Value);
+            GridView1.DataBind();
+            txtAnimal.Value = "";
+        }
+
+
     }
 }
