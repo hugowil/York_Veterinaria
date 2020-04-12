@@ -42,8 +42,8 @@
                 </div>
             <asp:GridView ID="GridView1" class="table table-striped table-bordered tableDatos" runat="server" AutoGenerateColumns="False" DataKeyNames="idRaza" DataSourceID="SqlDataSource1">
                 <Columns>
-                    <asp:BoundField DataField="idRaza" HeaderText="idRaza" InsertVisible="False" ReadOnly="True" SortExpression="idRaza" />
-                    <asp:BoundField DataField="Animal" HeaderText="Animal" SortExpression="Animal" />
+                    <asp:BoundField DataField="idRaza" HeaderText="idRaza" InsertVisible="False" ReadOnly="True" SortExpression="idRaza" Visible="False" />
+                    <asp:BoundField DataField="Animal" HeaderText="Especie" SortExpression="Animal" />
                     <asp:BoundField DataField="Raza" HeaderText="Raza" SortExpression="Raza" />
                 </Columns>
             </asp:GridView>

@@ -101,6 +101,7 @@
     <Content Include="assets\scripts\sweetalert.min.css" />
     <Content Include="assets\scripts\sweetalert.min.js" />
     <Content Include="especie.aspx" />
+    <Content Include="EstadoCivil.aspx" />
     <Content Include="index.html" />
     <Content Include="main.css" />
     <Content Include="Medico.aspx" />
@@ -118,6 +119,13 @@
     </Compile>
     <Compile Include="especie.aspx.designer.cs">
       <DependentUpon>especie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstadoCivil.aspx.cs">
+      <DependentUpon>EstadoCivil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstadoCivil.aspx.designer.cs">
+      <DependentUpon>EstadoCivil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Medico.aspx.cs">
       <DependentUpon>Medico.aspx</DependentUpon>
