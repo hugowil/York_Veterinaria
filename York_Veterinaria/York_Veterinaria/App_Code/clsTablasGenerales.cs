@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace York_Veterinaria.App_Code
-{
+
     public class clsTablasGenerales
     {
         clsDbPrincipal obj = new clsDbPrincipal();
@@ -36,4 +35,3 @@ namespace York_Veterinaria.App_Code
         }
 
     }
-}

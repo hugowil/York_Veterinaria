@@ -11,7 +11,7 @@ namespace York_Veterinaria
 {
 
 
-    public partial class Especie
+    public partial class especie
     {
 
         /// <summary>

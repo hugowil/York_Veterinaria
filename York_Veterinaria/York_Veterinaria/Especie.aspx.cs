@@ -5,16 +5,23 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-
-    public partial class Especie : System.Web.UI.Page
+namespace York_Veterinaria
+{
+    public partial class especie : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
+       
+
         protected void btnEnviar_Click(object sender, EventArgs e)
         {
-          
+            clsTablasGenerales obj = new clsTablasGenerales();
+            obj.InsertarAnimal(txtAnimal.Value);
+            GridView1.DataBind();
+            txtAnimal.Value = "";
         }
     }
+}

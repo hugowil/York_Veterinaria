@@ -100,7 +100,7 @@
     <Content Include="assets\scripts\main.js" />
     <Content Include="assets\scripts\sweetalert.min.css" />
     <Content Include="assets\scripts\sweetalert.min.js" />
-    <Content Include="Especie.aspx" />
+    <Content Include="especie.aspx" />
     <Content Include="index.html" />
     <Content Include="main.css" />
     <Content Include="Web.config" />
@@ -108,14 +108,14 @@
     <Content Include="WebForm2.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\clsDbPrincipal.cs" />
-    <Content Include="App_Code\clsTablasGenerales.cs" />
-    <Compile Include="Especie.aspx.cs">
-      <DependentUpon>Especie.aspx</DependentUpon>
+    <Compile Include="App_Code\clsDbPrincipal.cs" />
+    <Compile Include="App_Code\clsTablasGenerales.cs" />
+    <Compile Include="especie.aspx.cs">
+      <DependentUpon>especie.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Especie.aspx.designer.cs">
-      <DependentUpon>Especie.aspx</DependentUpon>
+    <Compile Include="especie.aspx.designer.cs">
+      <DependentUpon>especie.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaginaMaestra.Master.cs">
       <DependentUpon>PaginaMaestra.Master</DependentUpon>

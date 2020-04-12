@@ -14,6 +14,7 @@
 <asp:Content ID="Content5" ContentPlaceHolderID="ContentOpcionesTitulo" runat="server">
 </asp:Content>
 <asp:Content ID="Content6" ContentPlaceHolderID="ContentContenido" runat="server">
+    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+    <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
 </asp:Content>
-<asp:Content ID="Content7" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-</asp:Content>
+

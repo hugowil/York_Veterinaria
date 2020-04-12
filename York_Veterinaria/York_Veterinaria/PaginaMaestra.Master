@@ -171,7 +171,7 @@
 
                                  <li>
                                     <a href="#">
-                                        <i class="metismenu-icon pe-7s-diamond"></i>
+                                        <i class="metismenu-icon pe-7s-home"></i>
                                         Clinica
                                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
@@ -244,7 +244,8 @@
                             </ul>
                         </div>
                     </div>
-                </div>    <div class="app-main__outer">
+                </div>    
+            <div class="app-main__outer">
                     <div class="app-main__inner">
                         <div class="app-page-title">
                             
@@ -270,7 +271,7 @@
     </div>
                         </div>          
                         
-                        <div class="row">
+                        <div class="tab-content">
         <asp:ContentPlaceHolder ID="ContentContenido" runat="server"></asp:ContentPlaceHolder>
                         </div>
                         
@@ -302,7 +303,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>    </div>
+                    </div>   
+            </div>
                 <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
         </div>
     </div>
