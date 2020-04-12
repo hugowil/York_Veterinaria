@@ -33,5 +33,14 @@ using System.Web;
             return obj.ejecutar(sql);
 
         }
+    public bool InsertarTipoDocumento(String TipoDocumento)
+    {
+        String sql = "insert into TipoDocumento(TipoDocumento)values(" +
+            "'" + TipoDocumento + "'" +
+            ")";
+        return obj.ejecutar(sql);
 
     }
+
+
+}
