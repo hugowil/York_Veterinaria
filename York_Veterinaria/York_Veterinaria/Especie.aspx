@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentIconoTitulo" runat="server">
-     <i class="pe-7s-home icon-gradient bg-night-fade">
+     <i class="pe-7s-config icon-gradient bg-night-fade">
                                         </i>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentTitulo" runat="server">

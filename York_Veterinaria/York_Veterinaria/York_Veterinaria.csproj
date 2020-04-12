@@ -103,6 +103,7 @@
     <Content Include="especie.aspx" />
     <Content Include="index.html" />
     <Content Include="main.css" />
+    <Content Include="raza.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
@@ -125,6 +126,13 @@
       <DependentUpon>PaginaMaestra.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="raza.aspx.cs">
+      <DependentUpon>raza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="raza.aspx.designer.cs">
+      <DependentUpon>raza.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
