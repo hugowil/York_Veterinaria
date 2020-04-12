@@ -103,6 +103,7 @@
     <Content Include="especie.aspx" />
     <Content Include="index.html" />
     <Content Include="main.css" />
+    <Content Include="Medico.aspx" />
     <Content Include="raza.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
@@ -117,6 +118,13 @@
     </Compile>
     <Compile Include="especie.aspx.designer.cs">
       <DependentUpon>especie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Medico.aspx.cs">
+      <DependentUpon>Medico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Medico.aspx.designer.cs">
+      <DependentUpon>Medico.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaginaMaestra.Master.cs">
       <DependentUpon>PaginaMaestra.Master</DependentUpon>
