@@ -100,6 +100,7 @@
     <Content Include="assets\scripts\main.js" />
     <Content Include="assets\scripts\sweetalert.min.css" />
     <Content Include="assets\scripts\sweetalert.min.js" />
+    <Content Include="Ciudades.aspx" />
     <Content Include="especie.aspx" />
     <Content Include="EstadoCivil.aspx" />
     <Content Include="index.html" />
@@ -114,6 +115,13 @@
   <ItemGroup>
     <Compile Include="App_Code\clsDbPrincipal.cs" />
     <Compile Include="App_Code\clsTablasGenerales.cs" />
+    <Compile Include="Ciudades.aspx.cs">
+      <DependentUpon>Ciudades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ciudades.aspx.designer.cs">
+      <DependentUpon>Ciudades.aspx</DependentUpon>
+    </Compile>
     <Compile Include="especie.aspx.cs">
       <DependentUpon>especie.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

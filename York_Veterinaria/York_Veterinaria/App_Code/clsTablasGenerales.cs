@@ -41,6 +41,14 @@ using System.Web;
         return obj.ejecutar(sql);
 
     }
+    public bool InsertarCiudad(String Ciudad)
+    {
+        String sql = "insert into Ciudad(Ciudad)values(" +
+            "'" + Ciudad + "'" +
+            ")";
+        return obj.ejecutar(sql);
+
+    }
 
 
 }
