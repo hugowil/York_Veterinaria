@@ -23,7 +23,7 @@
 
                     <div class="col-md3">
                         <label for="validationTooltip01">Ciudades</label>
-                        <input type="text" class="form-control" id="txtCiudad"  required runat="server" placeholder="Ingrese la Ciudad" />
+                        <input type="text" class="form-control" id="txtCiudad" required runat="server" placeholder="Ingrese la Ciudad" />
                         <div class="invalid-feedback">Debe Ingresar la Ciudad</div>
                     </div>
                 </div>
@@ -32,10 +32,10 @@
                 <asp:Button ID="btnEnviar" runat="server" Text="Guardar" class="btn btn-primary btn-lg" OnClick="btnEnviar_Click" />
                 <asp:Button ID="btnActualizar" runat="server" Text="Actualizar" class="btn btn-primary btn-lg" OnClick="btnActualizar_Click" Visible="false" />
                 <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" class="btn btn-danger btn-lg" OnClick="btnEliminar_Click" Visible="false" />
-                <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" class="btn btn-dark btn-lg" OnClick="btnCancelar_Click"  Visible="false"/>
+                <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" class="btn btn-dark btn-lg" OnClick="btnCancelar_Click" Visible="false" />
                 <asp:HiddenField ID="hfId" runat="server" />
             </div>
-            <asp:GridView ID="GridView1" class="table table-striped table-bordered tableDatos" runat="server" AutoGenerateColumns="False" DataKeyNames="idCiudad" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+            <asp:GridView ID="GridView1" class="table table-striped table-bordered tableDatos" runat="server" AutoGenerateColumns="False" DataKeyNames="idCiudad" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" AllowSorting="True">
                 <Columns>
                     <asp:CommandField SelectText="Editar" ShowSelectButton="True" />
                     <asp:BoundField DataField="idCiudad" HeaderText="idCiudad" InsertVisible="False" ReadOnly="True" SortExpression="idCiudad" Visible="False" />

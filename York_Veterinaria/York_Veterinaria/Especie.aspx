@@ -36,7 +36,7 @@
                 <asp:HiddenField ID="hfId" runat="server" />
                 <asp:Label ID="lblMensaje" runat="server" Text="" ForeColor="Red" ></asp:Label>
             </div>
-            <asp:GridView ID="GridView1" class="table table-striped table-bordered tableDatos" runat="server" AutoGenerateColumns="False" DataKeyNames="idAnimal" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+            <asp:GridView ID="GridView1" class="table table-striped table-bordered tableDatos" runat="server" AutoGenerateColumns="False" DataKeyNames="idAnimal" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" AllowSorting="True">
                 <Columns>
                     <asp:CommandField SelectText="Editar" ShowSelectButton="True" />
                     <asp:BoundField DataField="idAnimal" HeaderText="idAnimal" InsertVisible="False" ReadOnly="True" SortExpression="idAnimal" Visible="False" />

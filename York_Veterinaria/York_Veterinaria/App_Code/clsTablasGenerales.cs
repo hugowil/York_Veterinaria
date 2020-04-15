@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-
     public class clsTablasGenerales
     {
         clsDbPrincipal obj = new clsDbPrincipal();
@@ -18,14 +17,39 @@ using System.Web;
                 "'" + EstadoCivil + "'" +
                 ")";
             return obj.ejecutar(sql);
-
         }
+
+    /// <summary>
+    /// Metodo para Actualizar el Estado Civil
+    /// </summary>
+    /// <param name="idEstadoCivil"></param>
+    /// <param name="EstadoCivil"></param>
+    /// <returns></returns>
+    public bool UpdateEstadoCivil(String idEstadoCivil, String EstadoCivil)
+    {
+        String sql = "update EstadoCivil set EstadoCivil=" +
+            "'" + EstadoCivil + "'" +
+            " where idEstadoCivil=" + idEstadoCivil;
+        return obj.ejecutar(sql);
+    }
+
+    /// <summary>
+    /// Metodo para Eliminar el Estado Civil
+    /// </summary>
+    /// <param name="idEstadoCivil"></param>
+    /// <returns></returns>
+    public bool DeleteEstadoCivil(String idEstadoCivil)
+    {
+        String sql = "delete from EstadoCivil where idEstadoCivil=" + idEstadoCivil;
+        return obj.ejecutar(sql);
+    }
+
     /// <summary>
     /// Metodo para agregar los Animales o Especies
     /// </summary>
     /// <param name="Animal"></param>
     /// <returns></returns>
-        public bool InsertarAnimal(String Animal)
+    public bool InsertarAnimal(String Animal)
         {
             String sql = "insert into Animal(Animal)values(" +
                 "'" + Animal + "'" +
@@ -109,7 +133,6 @@ using System.Web;
             "'" + Ciudad + "'" +
             ")";
         return obj.ejecutar(sql);
-
     }
 
     /// <summary>
@@ -136,6 +159,4 @@ using System.Web;
         String sql = "delete from Ciudad where idciudad=" + idCiudad;
         return obj.ejecutar(sql);
     }
-
-
 }
