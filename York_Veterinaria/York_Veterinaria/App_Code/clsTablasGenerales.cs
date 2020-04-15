@@ -21,7 +21,7 @@ using System.Web;
 
         }
     /// <summary>
-    /// Metodo para agregar los Animales
+    /// Metodo para agregar los Animales o Especies
     /// </summary>
     /// <param name="Animal"></param>
     /// <returns></returns>
@@ -31,15 +31,40 @@ using System.Web;
                 "'" + Animal + "'" +
                 ")";
             return obj.ejecutar(sql);
-
         }
+
+    /// <summary>
+    /// Metodo para actualizar el Animal o Especie
+    /// </summary>
+    /// <param name="idAnimal"></param>
+    /// <param name="Animal"></param>
+    /// <returns></returns>
+    public bool UpdateAnimal(String idAnimal, String Animal)
+    {
+        String sql = "update Animal set Animal=" +
+            "'" + Animal + "'" +
+            " where idAnimal=" + idAnimal;
+        return obj.ejecutar(sql);
+    }
+
+    /// <summary>
+    /// Metodo para Eliminar un Animal o Especie
+    /// </summary>
+    /// <param name="idAnimal"></param>
+    /// <returns></returns>
+    public bool DeleteAnimal(String idAnimal)
+    {
+        String sql = "delete from Animal where idAnimal=" + idAnimal;
+        return obj.ejecutar(sql);
+    }
+
     /// <summary>
     /// Metodo para Insertar la raza del animal
     /// </summary>
     /// <param name="Raza"></param>
     /// <param name="IdAnimal"></param>
     /// <returns></returns>
-        public bool InsertarRaza(String Raza, String IdAnimal)
+    public bool InsertarRaza(String Raza, String IdAnimal)
         {
             String sql = "insert into  Raza(IdAnimal,Raza)values(" +
                 "'" + IdAnimal + "'," +
@@ -47,7 +72,6 @@ using System.Web;
                 ")";
 
             return obj.ejecutar(sql);
-
         }
 
     /// <summary>
@@ -61,8 +85,19 @@ using System.Web;
             "'" + TipoDocumento + "'" +
             ")";
         return obj.ejecutar(sql);
-
     }
+
+    /// <summary>
+    /// Metodo para actualizar Tipo de Documento
+    /// </summary>
+    /// <param name="idDocumento"></param>
+    /// <param name="TipoDocumento"></param>
+    /// <returns></returns>
+    public bool UpdateTipoDocumento(String idDocumento,String TipoDocumento)
+    {
+        return true;
+    }
+
     /// <summary>
     /// Metodo para registrar las ciudades en donde tendra participacion
     /// </summary>
