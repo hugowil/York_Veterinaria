@@ -94,9 +94,32 @@ using System.Web;
                 "'" + IdAnimal + "'," +
                 "'" + Raza + "'" +
                 ")";
-
             return obj.ejecutar(sql);
         }
+
+    /// <summary>
+    /// Metodo para Actualizar Raza
+    /// </summary>
+    /// <param name="idRaza"></param>
+    /// <param name="Raza"></param>
+    /// <returns></returns>
+    public bool UpdateRaza(String idRaza, String Raza)
+    {
+        String sql = "update Raza set Raza=" +
+            "'" + Raza + "'" +
+            " where idRaza=" + idRaza;
+        return obj.ejecutar(sql);
+    }
+    /// <summary>
+    /// Metodo para Eliminar Raza
+    /// </summary>
+    /// <param name="idRaza"></param>
+    /// <returns></returns>
+    public bool DeleteRaza(String idRaza)
+    {
+        String sql = "delete from Raza where idRaza=" + idRaza;
+        return obj.ejecutar(sql);
+    }
 
     /// <summary>
     /// Metodo para insertar el tipo de documento
