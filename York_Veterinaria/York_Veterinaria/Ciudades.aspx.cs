@@ -32,7 +32,6 @@ namespace York_Veterinaria
 
         protected void btnActualizar_Click(object sender, EventArgs e)
         {
-            
             if (obj.UpdateCiudad(hfId.Value, txtCiudad.Value))
             {
                 limpiar();

@@ -62,5 +62,10 @@ namespace York_Veterinaria
         {
             limpiar();
         }
+
+        protected void hfId_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -117,9 +117,22 @@ using System.Web;
     /// <param name="idDocumento"></param>
     /// <param name="TipoDocumento"></param>
     /// <returns></returns>
-    public bool UpdateTipoDocumento(String idDocumento,String TipoDocumento)
+    public bool UpdateTipoDocumento(String idTipoDocumento,String TipoDocumento)
     {
-        return true;
+        String sql = "update TipoDocumento set TipoDocumento=" +
+            "'" + TipoDocumento + "'" +
+            " where idTipoDocumento=" + idTipoDocumento;
+        return obj.ejecutar(sql);
+    }
+    /// <summary>
+    /// Metodo para Eliminar Tipo de Documento
+    /// </summary>
+    /// <param name="idTipoDocumento"></param>
+    /// <returns></returns>
+    public bool DeleteTipoDocumento(String idTipoDocumento)
+    {
+        String sql = "delete from TipoDocumento where idTipoDocumento=" + idTipoDocumento;
+        return obj.ejecutar(sql);
     }
 
     /// <summary>
