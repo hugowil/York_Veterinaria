@@ -11,6 +11,8 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentSubTitulo" runat="server">
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="ContentOpcionesTitulo" runat="server">
+    
+
 </asp:Content>
 <asp:Content ID="Content6" ContentPlaceHolderID="ContentContenido" runat="server">
     <div class="main-card mb-3 card">

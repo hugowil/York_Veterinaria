@@ -7,12 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace York_Veterinaria
 {
-    public partial class Medico : System.Web.UI.Page
+    public partial class fechasEspeciales : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            clsMedico obj = new clsMedico();
-            tdatos.InnerHtml = obj.getMedicosTabla();
+
         }
     }
 }

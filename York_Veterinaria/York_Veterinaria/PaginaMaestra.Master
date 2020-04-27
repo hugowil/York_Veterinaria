@@ -4,7 +4,7 @@
 
 <html>
 <head runat="server">
-     <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="es">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -19,6 +19,9 @@
     <link href="assets/scripts/chosen/chosen.min.css" rel="stylesheet" />
     <link href="assets/scripts/sweetalert.min.css" rel="stylesheet" />
     <script src="assets/scripts/sweetalert.min.js"></script>
+    <script src="assets/scripts/notifIt/js/notifIt.js" type="text/javascript"></script>
+    <link href="assets/scripts/notifIt/css/notifIt.css" type="text/css" rel="stylesheet">
+
     <style>
         .app-page-title {
             padding: 5px;
@@ -148,13 +151,13 @@
                                     </a>
                                     <ul>
                                         <li>
-                                            <a href="elements-buttons-standard.html">
+                                            <a href="Medico.aspx">
                                                 <i class="metismenu-icon"></i>
                                                 Gestionar Medico
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="elements-dropdowns.html">
+                                            <a href="fechasEspeciales.aspx">
                                                 <i class="metismenu-icon">
                                                 </i>Fechas Especiales
                                             </a>
@@ -206,33 +209,33 @@
                                     </a>
                                     <ul>
                                         <li>
-                                            <a href="elements-buttons-standard.html">
+                                            <a href="Especie.aspx">
                                                 <i class="metismenu-icon"></i>
                                                 Especie
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="elements-dropdowns.html">
+                                            <a href="raza.aspx">
                                                 <i class="metismenu-icon">
                                                 </i>Raza
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="elements-dropdowns.html">
+                                            <a href="EstadoCivil.aspx">
                                                 <i class="metismenu-icon">
                                                 </i>Estado Civil
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="elements-dropdowns.html">
+                                            <a href="TipoDocumento.aspx">
                                                 <i class="metismenu-icon">
                                                 </i>Tipo Documento
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="elements-dropdowns.html">
+                                            <a href="Ciudades.aspx">
                                                 <i class="metismenu-icon">
                                                 </i>Ciudades
                                             </a>
@@ -335,7 +338,7 @@
             var date_input = $('.inputfecha'); //our date input has the name "date"
             var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
             date_input.datepicker({
-                format: 'yyyy/mm/dd',
+                format: 'dd/mm/yyyy',
                 container: container,
                 todayHighlight: true,
                 autoclose: true,
@@ -356,6 +359,17 @@
         function cerrar() {
             $("#carga").animate({ "opacity": "0" }, 1000, function () { $("#carga").css("display", "none"); });
         }
+
+        function not1() {
+            notif({
+                msg: "Transacción Exitosa",
+                type: "success"
+            });
+        }
+       
+
+
+
     </script>
 </body>
 </html>
